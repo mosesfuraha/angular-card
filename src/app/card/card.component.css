@@ -1,0 +1,90 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.example-card {
+  max-width: 400px;
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.example-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.example-card > div {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.example-header-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+  margin-bottom: 8px;
+}
+
+.example-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.example-card p {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.example-card p:first-of-type {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.example-card p:last-of-type {
+  font-size: 12px;
+  color: #777;
+}
+
+.example-card > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.example-card button {
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.example-card button:hover {
+  background-color: #3700b3;
+}
+
+.example-card button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(98, 0, 234, 0.3);
+}
