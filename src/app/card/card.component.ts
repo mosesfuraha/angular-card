@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Course } from '../model/course';
 import { COURSES } from '../data';
@@ -11,5 +11,6 @@ import { COURSES } from '../data';
   styleUrls: ['./card.component.css'], // Changed to styleUrls (plural)
 })
 export class CardComponent {
-  course: Course[] = COURSES;
+  // course: Course[] = COURSES;
+  @Input() cards: Course[] = [];
 }
